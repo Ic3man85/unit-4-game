@@ -1,0 +1,27 @@
+html,
+body {
+    background-image: url("../images/memphis-mini-dark.png");
+    background-size: inherit;
+}
+
+h1 {
+    background-color: yellowgreen;
+    background-size: cover;
+    width: 100%;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+}
+
+.instructions {
+    color: blue;
+    background-color: white;
+    background-size: cover;
+    width: 90%;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
