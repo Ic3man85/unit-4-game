@@ -26,14 +26,47 @@ h1 {
     margin-left: 25px;
 }
 
-.wrapper {
+.wrapper1 {
     display: flex;
+    margin-top: 15px;
+    margin-left: 35px;
+    justify-content: space-between;
 }
 
 .number {
-    background-color: white;
+    background-color: yellow;
     background-size: cover;
     width: 40%;
+    padding: 10px;
     font-size: 30px;
+    color: red;
+}
+
+.win-lose {
+    background-color: gainsboro;
+    background-size: cover;
+    width: 40%;
+    padding: 10px;
+    font-size: 20px;
     color: blue;
+}
+
+.wrapper2 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.image {
+    justify-items: center;
+    width: 75px;
+    height: 75px;
+}
+
+.score {
+    background-color: red;
+    width: 60%;
+    font-size: 25px;
+    color: yellow;
 }
