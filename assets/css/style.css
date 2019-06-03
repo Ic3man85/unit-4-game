@@ -6,17 +6,22 @@ body {
 
 h1 {
     background-color: yellowgreen;
+    opacity: .8;
+    border: 3px groove darkorange;
     width: 100%;
     padding: 25px;
     margin-top: 20px;
     text-align: center;
     font-size: 40px;
+    text-shadow: 3px 0px 3px orangered;
     color: blue;
 }
 
 .instructions {
     color: blue;
     background-color: white;
+    opacity: .8;
+    border: 3px groove darkorange;
     width: 90%;
     font-size: 20px;
     padding: 10px;
@@ -31,7 +36,8 @@ h1 {
 
 .number {
     background-color: yellow;
-    background-size: cover;
+    opacity: .8;
+    border: 3px groove darkorange;
     width: 40%;
     padding: 10px;
     font-size: 30px;
@@ -40,7 +46,8 @@ h1 {
 
 .win-lose {
     background-color: gainsboro;
-    background-size: cover;
+    border: 3px groove darkorange;
+    opacity: .8;
     width: 40%;
     padding: 10px;
     font-size: 20px;
@@ -56,6 +63,8 @@ h1 {
 
 .image {
     border: 2px dotted lawngreen;
+    border-radius: 8px;
+    opacity: .8;
     width: 85px;
     height: 85px;
 }
@@ -65,9 +74,66 @@ h1 {
     float: right;
     margin: 10px 25px 0 0;
     background-color: red;
+    border: 3px groove darkorange;
     width: 60%;
     padding: 20px;
     opacity: .8;
     font-size: 25px;
     color: yellow;
+}
+
+@media (min-width: 640px) {
+    .instructions {
+        margin-left: 45px;
+    }
+    .wrapper1 {
+        justify-content: left;
+    }
+    .number {
+        width: 20%;
+        padding: 20px;
+    }
+    .win-lose {
+        width: 20%;
+        padding: 20px;
+        margin-left: 40px;
+    }
+    .wrapper2 {
+        margin-left: 45px;
+    }
+    .score {
+        float: left;
+        margin-left: 45px;
+        width: 45%;
+    }
+}
+
+@media(min-width: 768px) {
+    .instructions,
+    .wrapper1,
+    .wrapper2,
+    .score {
+        margin-left: 35px;
+    }
+}
+
+@media(min-width: 980px) {
+    h1 {
+        width: 40%;
+        margin-left: 35px;
+    }
+    .instructions {
+        width: 50%;
+    }
+    .number,
+    .win-lose {
+        width: 15%;
+    }
+    .score {
+        width: 20%;
+    }
+    .image {
+        width: 115px;
+        height: 115px;
+    }
 }
