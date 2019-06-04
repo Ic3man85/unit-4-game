@@ -16,7 +16,8 @@ $('#image3').val(crys3);
 let crys4 = Math.floor(Math.random() * 15) + 1;
 console.log('crystal-4: ' + crys4);
 $('#image4').val(crys4);
-
+let winAudio = new Audio('fireworks.mp3');
+let loseAudio = new Audio('Losingsound.mp3');
 $('document').ready(function() {
 
     $('.image').on('click', function() {
@@ -26,11 +27,13 @@ $('document').ready(function() {
         $('#score1').html(newScore);
         if (newScore == number) {
             wins++
+            winAudio.play();
             $('#wins').html(wins);
             alert("YOU WON!!!");
             resetPage();
         } else if (newScore > number) {
             lose++;
+            loseAudio.play();
             $('#lose').html(lose);
             alert("YOU LOSE!!!");
             resetPage();
