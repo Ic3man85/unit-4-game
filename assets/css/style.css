@@ -8,6 +8,8 @@ h1 {
     background-color: yellowgreen;
     opacity: .8;
     border: 3px groove darkorange;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gainsboro;
     width: 100%;
     padding: 25px;
     margin-top: 20px;
@@ -22,6 +24,7 @@ h1 {
     background-color: white;
     opacity: .8;
     border: 3px groove darkorange;
+    border-radius: 8px;
     width: 90%;
     font-size: 20px;
     padding: 10px;
@@ -38,15 +41,17 @@ h1 {
     background-color: yellow;
     opacity: .8;
     border: 3px groove darkorange;
+    border-radius: 15px;
     width: 40%;
     padding: 10px;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
 }
 
 .win-lose {
     background-color: gainsboro;
     border: 3px groove darkorange;
+    border-radius: 15px;
     opacity: .8;
     width: 40%;
     padding: 10px;
@@ -75,6 +80,7 @@ h1 {
     margin: 10px 25px 0 0;
     background-color: red;
     border: 3px groove darkorange;
+    border-radius: 8px;
     width: 60%;
     padding: 20px;
     opacity: .8;
@@ -109,11 +115,18 @@ h1 {
 }
 
 @media(min-width: 768px) {
-    .instructions,
     .wrapper1,
     .wrapper2,
     .score {
         margin-left: 35px;
+    }
+    h1 {
+        width: 40%;
+        margin-left: 35px;
+    }
+    .instructions {
+        margin-left: 35px;
+        width: 60%;
     }
 }
 
