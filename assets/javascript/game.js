@@ -4,16 +4,16 @@ let lose = 0;
 let number = Math.floor(Math.random() * (25 + 50)) + 25;
 $('#guess-num').html(number);
 console.log('Number: ' + number);
-let crys1 = Math.floor(Math.random() * 15) + 1;
+let crys1 = Math.floor(Math.random() * 12) + 1;
 console.log('crystal-1: ' + crys1);
 $('#image1').val(crys1);
-let crys2 = Math.floor(Math.random() * 15) + 1;
+let crys2 = Math.floor(Math.random() * 12) + 1;
 console.log('crystal-2: ' + crys2);
 $('#image2').val(crys2);
-let crys3 = Math.floor(Math.random() * 15) + 1;
+let crys3 = Math.floor(Math.random() * 12) + 1;
 console.log('crystal-3: ' + crys3);
 $('#image3').val(crys3);
-let crys4 = Math.floor(Math.random() * 15) + 1;
+let crys4 = Math.floor(Math.random() * 12) + 1;
 console.log('crystal-4: ' + crys4);
 $('#image4').val(crys4);
 let winAudio = new Audio('fireworks.mp3');
@@ -26,14 +26,14 @@ $('document').ready(function() {
         console.log('New Score: ' + newScore);
         $('#score1').html(newScore);
         if (newScore == number) {
-            wins++
             winAudio.play();
+            wins++
             $('#wins').html(wins);
             alert("YOU WON!!!");
             resetPage();
         } else if (newScore > number) {
-            lose++;
             loseAudio.play();
+            lose++;
             $('#lose').html(lose);
             alert("YOU LOSE!!!");
             resetPage();
@@ -44,16 +44,16 @@ $('document').ready(function() {
         number = Math.floor(Math.random() * (25 + 50)) + 25;
         $('#guess-num').html(number);
         console.log('Number: ' + number);
-        crys1 = Math.floor(Math.random() * 15) + 1;
+        crys1 = Math.floor(Math.random() * 12) + 1;
         console.log('crystal1: ' + crys1);
         $('#image1').val(crys1);
-        crys2 = Math.floor(Math.random() * 15) + 1;
+        crys2 = Math.floor(Math.random() * 12) + 1;
         console.log('crystal2: ' + crys2);
         $('#image2').val(crys2);
-        crys3 = Math.floor(Math.random() * 15) + 1;
+        crys3 = Math.floor(Math.random() * 12) + 1;
         console.log('crystal3: ' + crys3);
         $('#image3').val(crys3);
-        crys4 = Math.floor(Math.random() * 15) + 1;
+        crys4 = Math.floor(Math.random() * 12) + 1;
         console.log('crsytal4: ' + crys4);
         $('#image4').val(crys4);
         newScore = 0;

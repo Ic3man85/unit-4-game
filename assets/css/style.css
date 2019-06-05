@@ -1,7 +1,6 @@
 html,
 body {
     background-image: url("../images/memphis-mini-dark.png");
-    background-size: inherit;
 }
 
 h1 {
@@ -15,12 +14,13 @@ h1 {
     margin-top: 20px;
     text-align: center;
     font-size: 40px;
-    text-shadow: 3px 0px 3px orangered;
+    text-shadow: 0px 0px 5px darkblue;
     color: blue;
 }
 
 .instructions {
     color: blue;
+    font-weight: bolder;
     background-color: white;
     opacity: .8;
     border: 3px groove darkorange;
@@ -68,7 +68,7 @@ h1 {
 
 .image {
     border: 2px dotted lawngreen;
-    border-radius: 8px;
+    border-radius: 50%;
     opacity: .8;
     width: 85px;
     height: 85px;
