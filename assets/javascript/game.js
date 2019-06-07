@@ -16,7 +16,7 @@ $('#image3').val(crys3);
 let crys4 = Math.floor(Math.random() * 12) + 1;
 console.log('crystal-4: ' + crys4);
 $('#image4').val(crys4);
-let winAudio = new Audio('fireworks.mp3');
+let winAudio = new Audio('Short_triumphal_fanfare-John_Stracke-815794903.mp3');
 let loseAudio = new Audio('Losingsound.mp3');
 $('document').ready(function() {
 
